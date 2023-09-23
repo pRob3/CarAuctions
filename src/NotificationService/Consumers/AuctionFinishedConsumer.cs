@@ -15,7 +15,7 @@ public class AuctionFinishedConsumer : IConsumer<AuctionFinished>
 
   public async Task Consume(ConsumeContext<AuctionFinished> context)
   {
-    Console.WriteLine("--> Auction finished message received");
+    Console.WriteLine("--> auction finished message received");
 
     await _hubContext.Clients.All.SendAsync("AuctionFinished", context.Message);
   }
