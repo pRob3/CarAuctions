@@ -7,7 +7,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import React from 'react';
 import { AiFillCar, AiFillTrophy, AiOutlineLogout } from 'react-icons/ai';
 import { HiCog, HiUser } from 'react-icons/hi2';
-import { useParamsStore } from '../hooks/useParamsStore';
+import { useParamsStore } from '../../hooks/useParamsStore';
 
 type Props = {
   user: User;

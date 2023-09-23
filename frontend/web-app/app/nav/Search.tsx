@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { useParamsStore } from '../hooks/useParamsStore';
+import { useParamsStore } from '../../hooks/useParamsStore';
 import { usePathname, useRouter } from 'next/navigation';
 
 export default function Search() {
@@ -34,7 +34,7 @@ export default function Search() {
         onChange={onChange}
         type='text'
         placeholder='Search for cars by make, model or color'
-        className='flex-grow pl-5 bg-transparent focus:outline-none border-transparent focus:border-transparent focus:ring-0 text-sm text-gray-600'
+        className='input-custom text-sm text-gray-600'
       />
       <button onClick={search}>
         <FaSearch
