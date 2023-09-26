@@ -98,7 +98,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Docker
       - ASPNETCORE_URLS=http://+:80
-      - ClientApp=http://app.carauctions.com
+      - ClientApp=https://app.carauctions.com
       - VIRTUAL_HOST=api.carauctions.com
     networks:
       custom:
