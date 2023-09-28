@@ -33,7 +33,7 @@ public class AuctionControllerTests : IClassFixture<CustomWebAppFactory>, IAsync
   }
 
   [Fact]
-  public async Task GetAuctionNyId_WithValidId_ShouldReturnAuction()
+  public async Task GetAuctionById_WithValidId_ShouldReturnAuction()
   {
     // Arrange?
 
@@ -45,7 +45,7 @@ public class AuctionControllerTests : IClassFixture<CustomWebAppFactory>, IAsync
   }
 
   [Fact]
-  public async Task GetAuctionNyId_WithInvalidId_ShouldReturn404()
+  public async Task GetAuctionById_WithInvalidId_ShouldReturn404()
   {
     // Arrange?
 
@@ -57,7 +57,7 @@ public class AuctionControllerTests : IClassFixture<CustomWebAppFactory>, IAsync
   }
 
   [Fact]
-  public async Task GetAuctionNyId_WithInvalidGuid_ShouldReturn400()
+  public async Task GetAuctionById_WithInvalidGuid_ShouldReturn400()
   {
     // Arrange?
 
